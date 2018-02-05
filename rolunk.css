@@ -47,7 +47,7 @@ p {
 }
 @font-face {
   font-family: "Clip";
-  src: url("Clip.ttf");
+  src: url("clip.regular.ttf");
 }
 .font2 {
   font-family: Clip;
