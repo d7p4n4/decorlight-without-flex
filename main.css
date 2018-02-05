@@ -48,6 +48,11 @@ table {
 
 /* -------------------- */
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 body {
     background-color: black;
 }
@@ -152,6 +157,7 @@ p {
     96%    { color: #ff55de; text-shadow: 0 0 5px #ff99de, 0 0 10px #ff99de, 0 0 17px #ff00de, 0 0 38px #ff00de}
     100%    { color: #ff55de; text-shadow: 0 0 5px #ff99de, 0 0 10px #ff99de, 0 0 15px #ff99de, 0 0 20px #ff00de, 0 0 30px #ff00de, 0 0 40px #ff00de; }
 }
+    
 
 .animate {
     -webkit-animation-name: turnonlights;
@@ -166,3 +172,59 @@ p {
   font-family: Monoton;
   font-size: 5rem;
 }
+
+@font-face {
+  font-family: "Neon";
+  src: url("Neon.ttf"); 
+}
+
+.font {
+  font-family: "Neon";
+  color: white;
+}
+
+@font-face {
+  font-family: "Clip";
+  src: url("clip.ttf");
+}
+
+a:hover {
+  font-family: "Clip";
+  font-size: 2rem;
+      -webkit-animation-name: turnonlightsblue;
+    -webkit-animation-duration: 15s;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-timing-function: steps(2, start);
+    -webkit-animation-iteration-count: infinite;
+  text-align: right;
+}
+
+.font2 {
+  font-family: Clip;
+  color: dimgrey;
+  text-align: right;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+@-webkit-keyframes turnonlightsblue {
+    0%        { color: #6d5669; text-shadow: 0 0 3px #635861, 0 0 5px #635861; }
+    .2%        { color: white; text-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 17px blue, 0 0 38px blue; }
+    .8%        { color: white; text-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 17px blue, 0 0 38px blue; }
+    1.4%        { color: #6d5669; text-shadow: 0 0 3px #635861, 0 0 5px #635861; }
+    1.6%        { color: white; text-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 17px blue, 0 0 38px blue; }
+    2.4%        { color: #6d5669; text-shadow: 0 0 3px #635861, 0 0 5px #635861; }
+    4.4%        { color: #6d5669; text-shadow: 0 0 3px #635861, 0 0 5px #635861; }
+    4.6%        { color: white; text-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 15px blue, 0 0 20px blue, 0 0 30px blue, 0 0 40px blue; }
+    5.2%        { color: #6d5669; text-shadow: 0 0 3px #635861, 0 0 5px #635861; }
+    5.6%        { color: white; text-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 15px blue, 0 0 20px blue, 0 0 30px blue, 0 0 40px blue; }
+    6.8%        { color: white; text-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 17px blue, 0 0 38px blue; }
+    7.2%        { color: #6d5669; text-shadow: 0 0 3px #635861, 0 0 5px #635861; }
+    8.4%        { color: white; text-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 17px blue, 0 0 38px blue; }
+    8.6%        { color: #6d5669; text-shadow: 0 0 3px #635861, 0 0 5px #635861; }
+    9.6%        { color: white; text-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 17px blue, 0 0 38px blue; }
+  10%           {color: white; text-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 17px blue, 0 0 38px blue, 0 0 50px blue, 0 0 70px blue;}
+  100%        {color: white; text-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 17px blue, 0 0 38px blue, 0 0 50px blue, 0 0 70px blue;}
+}
+  
