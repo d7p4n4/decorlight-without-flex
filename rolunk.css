@@ -12,7 +12,7 @@ a {
   font-family: "Clip";
   font-size: 2rem;
       -webkit-animation-name: turnonlightsblue;
-    -webkit-animation-duration: 15s;
+    -webkit-animation-duration: 20s;
     -webkit-animation-fill-mode: both;
     -webkit-animation-timing-function: steps(2, start);
     -webkit-animation-iteration-count: infinite;
@@ -49,10 +49,135 @@ p {
   font-family: "Clip";
   src: url("clip.regular.ttf");
 }
+
+
 .font2 {
   font-family: Clip;
   color: dimgrey;
   text-align: right;
+  margin: 0;
+  opacity: 1;
+  font-weight: bold;
+  font-size: 2.2rem;
+}
+
+.menuWrapper {
+  width: 20%;
+  text-align: center;
+  display: inline-block;
+  margin-left: 4%;
+}
+
+body {
+    background-image: url("assets/backg.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+
+p {
+  text-align: center;
+  margin: 1rem;
+  font-size: 2rem;
+  display: inline-block;
+  margin-top: 3rem;
+}
+.orange {
+  font-family: Monoton;
+  color: white;
+  text-shadow: 0 0 5px orange, 0 0 10px orange, 0 0 15px orange, 0 0 20px orange, 0 0 30px orange, 0 0 40px orange; 
+  display: block;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+
+@font-face {
+  font-family: "Neon";
+  src: url("Neon.ttf"); 
+}
+
+.slogan {
+  font-family: "Neon";
+  color: white;
+  display: block;
+  text-align: center;
+  margin-bottom: 3rem;
   margin-top: 1rem;
-  margin-bottom: 1rem;
+}
+
+@-webkit-keyframes turnonlights {
+    0%        { color: #6d5669; text-shadow: 0 0 3px #635861, 0 0 5px #635861; }
+    .1%        { color: white; text-shadow: 0 0 5px orange, 0 0 10px orange, 0 0 17px orange, 0 0 38px orange, 0 0 50px orange, 0 0 70px orange}
+    .4%        { color: white; text-shadow: 0 0 5px orange, 0 0 10px orange, 0 0 17px orange, 0 0 38px orange,  0 0 50px orange, 0 0 70px orange}
+    .7%        { color: #6d5669; text-shadow: 0 0 3px #635861, 0 0 5px #635861; }
+    .8%        { color: white; text-shadow: 0 0 5px orange, 0 0 10px orange, 0 0 17px orange, 0 0 38px orange, 0 0 50px orange, 0 0 70px orange}
+    1.2%        { color: #6d5669; text-shadow: 0 0 3px #635861, 0 0 5px #635861; }
+    2.2%        { color: #6d5669; text-shadow: 0 0 3px #635861, 0 0 5px #635861; }
+    2.3%       { color: white; text-shadow: 0 0 5px orange, 0 0 10px orange, 0 0 15px orange, 0 0 20px orange, 0 0 30px orange, 0 0 40px orange, 0 0 55px orange, 0 0 80px orange; }
+    2.6%        { color: #6d5669; text-shadow: 0 0 3px #635861, 0 0 5px #635861; }
+    2.8%        { color: white; text-shadow: 0 0 5px orange, 0 0 10px orange, 0 0 17px orange, 0 0 38px orange, 0 0 50px orange, 0 0 70px orange, 0 0 55px orange, 0 0 80px orange; }
+    3.4%        { color: white; text-shadow: 0 0 5px orange, 0 0 10px orange, 0 0 15px orange, 0 0 20px orange, 0 0 30px orange, 0 0 40px orange; }
+    3.6%        { color: #6d5669; text-shadow: 0 0 3px #635861, 0 0 5px #635861; }
+    4.2%        { color: white; text-shadow: 0 0 5px orange, 0 0 10px orange, 0 0 17px orange, 0 0 38px orange, 0 0 50px orange, 0 0 70px orange}
+    5.5%       { color: white; text-shadow: 0 0 5px orange, 0 0 10px orange, 0 0 15px orange, 0 0 20px orange, 0 0 30px orange, 0 0 40px orange, 0 0 55px orange, 0 0 80px orange; ; }
+    6.0%        { color: #6d5669; text-shadow: 0 0 3px #635861, 0 0 5px #635861; }
+    6.3%        { color: white; text-shadow: 0 0 5px orange, 0 0 10px orange, 0 0 15px orange, 0 0 20px orange, 0 0 30px orange, 0 0 40px orange, 0 0 55px orange, 0 0 80px orange; ; }
+    6.7%        { color: #6d5669; text-shadow: 0 0 3px #635861, 0 0 5px #635861; }
+    7.2%        { color: #6d5669; text-shadow: 0 0 3px #635861, 0 0 5px #635861; }
+    7.3%        { color: white; text-shadow: 0 0 5px orange, 0 0 10px orange, 0 0 17px orange, 0 0 38px orange, 0 0 50px orange, 0 0 70px orange}
+    7.6%        { color: #6d5669; text-shadow: 0 0 3px #635861, 0 0 5px #635861; }
+    7.8%        { color: white; text-shadow: 0 0 5px orange, 0 0 10px orange, 0 0 17px orange, 0 0 38px orange, 0 0 50px orange, 0 0 70px orange}
+    8.4%       { color: white; text-shadow: 0 0 5px orange, 0 0 10px orange, 0 0 15px orange, 0 0 20px orange, 0 0 30px orange, 0 0 40px orange, 0 0 55px orange, 0 0 80px orange; }
+    8.6%        { color: #6d5669; text-shadow: 0 0 3px #635861, 0 0 5px #635861; }
+    9.6%    { color: white; text-shadow: 0 0 5px orange, 0 0 10px orange, 0 0 17px orange, 0 0 38px orange, 0 0 50px orange, 0 0 70px orange}
+    10%    { color: white; text-shadow: 0 0 5px orange, 0 0 10px orange, 0 0 15px orange, 0 0 20px orange, 0 0 30px orange, 0 0 40px orange, 0 0 55px orange, 0 0 80px orange; }
+    100%    { color: white; text-shadow: 0 0 5px orange, 0 0 10px orange, 0 0 15px orange, 0 0 20px orange, 0 0 30px orange, 0 0 40px orange, 0 0 55px orange, 0 0 80px orange; }
+  
+}
+@-moz-keyframes turnonlights {
+    0%        { color: #6d5669; text-shadow: 0 0 3px #635861, 0 0 5px #635861; }
+    1%        { color: #ff55de; text-shadow: 0 0 5px #ff99de, 0 0 10px #ff99de, 0 0 17px #ff00de, 0 0 38px #ff00de}
+    4%        { color: #ff55de; text-shadow: 0 0 5px #ff99de, 0 0 10px #ff99de, 0 0 17px #ff00de, 0 0 38px #ff00de}
+    7%        { color: #6d5669; text-shadow: 0 0 3px #635861, 0 0 5px #635861; }
+    8%        { color: #ff55de; text-shadow: 0 0 5px #ff99de, 0 0 10px #ff99de, 0 0 17px #ff00de, 0 0 38px #ff00de}
+    12%        { color: #6d5669; text-shadow: 0 0 3px #635861, 0 0 5px #635861; }
+    22%        { color: #6d5669; text-shadow: 0 0 3px #635861, 0 0 5px #635861; }
+    23%        { color: #ff55de; text-shadow: 0 0 5px #ff99de, 0 0 10px #ff99de, 0 0 15px #ff99de, 0 0 20px #ff00de, 0 0 30px #ff00de, 0 0 40px #ff00de; }
+    26%        { color: #6d5669; text-shadow: 0 0 3px #635861, 0 0 5px #635861; }
+    28%        { color: #ff55de; text-shadow: 0 0 5px #ff99de, 0 0 10px #ff99de, 0 0 17px #ff00de, 0 0 38px #ff00de}
+    34%        { color: #ff55de; text-shadow: 0 0 5px #ff99de, 0 0 10px #ff99de, 0 0 15px #ff99de, 0 0 20px #ff00de, 0 0 30px #ff00de, 0 0 40px #ff00de; }
+    36%        { color: #6d5669; text-shadow: 0 0 3px #635861, 0 0 5px #635861; }
+    42%        { color: #ff55de; text-shadow: 0 0 5px #ff99de, 0 0 10px #ff99de, 0 0 17px #ff00de, 0 0 38px #ff00de}
+    55%        { color: #ff55de; text-shadow: 0 0 5px #ff99de, 0 0 10px #ff99de, 0 0 15px #ff99de, 0 0 20px #ff00de, 0 0 30px #ff00de, 0 0 40px #ff00de; }
+    60%        { color: #6d5669; text-shadow: 0 0 3px #635861, 0 0 5px #635861; }
+    63%        { color: #ff55de; text-shadow: 0 0 5px #ff99de, 0 0 10px #ff99de, 0 0 15px #ff99de, 0 0 20px #ff00de, 0 0 30px #ff00de, 0 0 40px #ff00de; }
+    67%        { color: #6d5669; text-shadow: 0 0 3px #635861, 0 0 5px #635861; }
+    72%        { color: #6d5669; text-shadow: 0 0 3px #635861, 0 0 5px #635861; }
+    73%        { color: #ff55de; text-shadow: 0 0 5px #ff99de, 0 0 10px #ff99de, 0 0 17px #ff00de, 0 0 38px #ff00de}
+    76%        { color: #6d5669; text-shadow: 0 0 3px #635861, 0 0 5px #635861; }
+    78%        { color: #ff55de; text-shadow: 0 0 5px #ff99de, 0 0 10px #ff99de, 0 0 17px #ff00de, 0 0 38px #ff00de}
+    84%        { color: #ff55de; text-shadow: 0 0 5px #ff99de, 0 0 10px #ff99de, 0 0 15px #ff99de, 0 0 20px #ff00de, 0 0 30px #ff00de, 0 0 40px #ff00de; }
+    86%        { color: #6d5669; text-shadow: 0 0 3px #635861, 0 0 5px #635861; }
+    96%    { color: #ff55de; text-shadow: 0 0 5px #ff99de, 0 0 10px #ff99de, 0 0 17px #ff00de, 0 0 38px #ff00de}
+    100%    { color: #ff55de; text-shadow: 0 0 5px #ff99de, 0 0 10px #ff99de, 0 0 15px #ff99de, 0 0 20px #ff00de, 0 0 30px #ff00de, 0 0 40px #ff00de; }
+}
+    
+
+.animate {
+    -webkit-animation-name: turnonlights;
+    -webkit-animation-duration: 30s;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-timing-function: steps(2, start);
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: turnonlights;
+    -moz-animation-duration: 3.0s;
+    -moz-animation-fill-mode: both;
+    -moz-animation-timing-function: steps(2, start);      
+  font-family: Monoton;
+  font-size: 5rem;
+  display: block;
+  text-align: center;
 }

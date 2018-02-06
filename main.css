@@ -54,13 +54,20 @@ a {
 }
 
 body {
-    background-color: black;
+    background-image: url("assets/backg.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
 }
 
 p {
   text-align: center;
-  margin: 3rem;
+  margin: 1rem;
   font-size: 2rem;
+  display: inline-block;
+  margin-top: 3rem;
 }
 
 .red {
@@ -79,12 +86,16 @@ p {
     font-family: "Cabin Sketch";
     color: white;
     text-shadow: 0 0 5px white, 0 0 10px white, 0 0 20px green, 0 0 30px green, 0 0 40px green, 0 0 55px green, 0 0 75px green;
+
   }
 
 .orange {
   font-family: Monoton;
   color: white;
   text-shadow: 0 0 5px orange, 0 0 10px orange, 0 0 15px orange, 0 0 20px orange, 0 0 30px orange, 0 0 40px orange; 
+  display: block;
+  text-align: center;
+  margin-top: 3rem;
 }
 
 .yellow {
@@ -171,6 +182,8 @@ p {
     -moz-animation-timing-function: steps(2, start);      
   font-family: Monoton;
   font-size: 5rem;
+  display: block;
+  text-align: center;
 }
 
 @font-face {
@@ -178,9 +191,13 @@ p {
   src: url("Neon.ttf"); 
 }
 
-.font {
+.slogan {
   font-family: "Neon";
   color: white;
+  display: block;
+  text-align: center;
+  margin-bottom: 3rem;
+  margin-top: 1rem;
 }
 
 @font-face {
@@ -189,23 +206,13 @@ p {
 }
 
 a:hover {
-  font-family: "Clip";
-  font-size: 2rem;
       -webkit-animation-name: turnonlightsblue;
-    -webkit-animation-duration: 15s;
+    -webkit-animation-duration: 20s;
     -webkit-animation-fill-mode: both;
     -webkit-animation-timing-function: steps(2, start);
     -webkit-animation-iteration-count: infinite;
-  text-align: right;
 }
 
-.font2 {
-  font-family: Clip;
-  color: dimgrey;
-  text-align: right;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
 
 
 @-webkit-keyframes turnonlightsblue {
@@ -227,4 +234,21 @@ a:hover {
   10%           {color: white; text-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 17px blue, 0 0 38px blue, 0 0 50px blue, 0 0 70px blue;}
   100%        {color: white; text-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 17px blue, 0 0 38px blue, 0 0 50px blue, 0 0 70px blue;}
 }
-  
+
+
+.font2 {
+  font-family: Clip;
+  color: dimgrey;
+  text-align: right;
+  margin: 0;
+  opacity: 1;
+  font-weight: bold;
+  font-size: 2.2rem;
+}
+
+.menuWrapper {
+  width: 20%;
+  text-align: center;
+  display: inline-block;
+  margin-left: 4%;
+}
