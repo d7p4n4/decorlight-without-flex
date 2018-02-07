@@ -1,0 +1,34 @@
+.slideContainer {
+  width: 720px;
+  height: 400px;
+  position: relative;
+  left: calc(50% - 360px);
+  top: 50%;
+  overflow: hidden;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.fullSlide {
+  width: 4320px;
+  height: 400px;
+}
+
+.slides {
+  display: inline-block;
+  width: 720px;
+  height: 400px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  float: left;
+}
+
+img {
+  max-height: 400px;
+  max-width: 720px;
+}
+
+.bistro {
+  margin-top: 2rem;
+}
