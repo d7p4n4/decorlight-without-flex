@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 
 a {
   text-decoration: none;
@@ -13,7 +16,14 @@ a {
     -webkit-animation-fill-mode: both;
     -webkit-animation-timing-function: steps(2, start);
     -webkit-animation-iteration-count: infinite;
-  text-align: right;
+}
+
+.menuBtn:hover {
+  -webkit-animation-name: turnonlightsblue;
+    -webkit-animation-duration: 20s;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-timing-function: steps(2, start);
+    -webkit-animation-iteration-count: infinite;
 }
 
 
@@ -81,15 +91,6 @@ p {
   display: inline-block;
   margin-top: 3rem;
 }
-.orange {
-  font-family: Monoton;
-  color: white;
-  text-shadow: 0 0 5px orange, 0 0 10px orange, 0 0 15px orange, 0 0 20px orange, 0 0 30px orange, 0 0 40px orange; 
-  display: block;
-  text-align: center;
-  margin-top: 3rem;
-}
-
 
 @font-face {
   font-family: "Neon";
@@ -177,4 +178,45 @@ p {
   font-size: 5rem;
   display: block;
   text-align: center;
+  margin: 3rem;
+}
+
+.container {
+  height: auto;
+  width: 50%;
+  position: relative;
+  margin: 3rem 0;
+  padding: 2rem;
+  left: 10%;
+  background: rgba(0,0,0,.8);
+  border-radius: 1rem;
+}
+
+.about {
+  font-family: Neon;
+  color: white;
+  font-size: 1rem;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+
+.firstLine {
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.li {
+  font-family: Neon;
+  font-size: 1rem;
+  color: aquamarine;
+  text-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 20px blue, 0 0 33px blue;
+  line-height: 1.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+.ul {
+  margin: 1rem;
+  margin-left: 15%;
 }
