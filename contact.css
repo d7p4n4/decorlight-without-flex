@@ -1,0 +1,43 @@
+@font-face {
+  font-family: Neone;
+  src: url(Neon.ttf);
+}
+
+.contactTitle, .address, .contact, .name {
+  color: white;
+  font-family: Neon;
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.contactTitle {
+  margin: 1rem 0;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.address {
+  color: aquamarine;
+  text-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 20px blue, 0 0 33px blue;
+}
+
+.name {
+  font-size: 2rem;
+  color: aquamarine;
+  text-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 20px blue, 0 0 33px blue;
+}
+
+.mail, .web {
+  color: dimgray;
+  text-decoration: underline;
+}
+
+.mail:hover, .web:hover {
+  color: aquamarine;
+  text-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 20px blue, 0 0 33px blue;
+}
+
+.email {
+  margin-left: 2rem;
+}

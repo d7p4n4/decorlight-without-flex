@@ -1,0 +1,11 @@
+.hungarian {
+  filter: opacity(.5);
+}
+
+.hungarian:hover {
+  filter: opacity(1);
+}
+
+.german {
+  filter: opacity(1);
+}
