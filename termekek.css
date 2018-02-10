@@ -1,0 +1,37 @@
+@font-face {
+  font-family: Neon;
+  src: url("Neon.ttf");
+}
+
+.termek {
+  height: auto;
+  width: 25%;
+  padding: 1rem;
+  background: rgba(0,0,0,.8);
+  border-radius: 0 0 1rem 1rem;
+  color: white;
+  position: relative;
+  left: 37.8%;
+  display: none;
+}
+
+.termekekLi {
+  color: dimgray;
+  font-family: Neon;
+  font-size: 1rem;
+}
+
+.termekekLi:hover {
+  color: aquamarine;
+  font-family: Neon;
+  text-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 20px blue, 0 0 33px blue;
+}
+
+.menuWrapperActive {
+  background: rgba(0,0,0,.8);
+  border-radius: 1rem 1rem 0 0;
+}
+
+.termekActive {
+  display: block;
+}
