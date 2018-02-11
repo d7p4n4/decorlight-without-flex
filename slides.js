@@ -56,18 +56,49 @@ window.onload = function() {
     neonStartSlider();
   });
   
+  
+    $(function () {
+  
+  var height = 400;
+  var animationSpeed = 1500;
+  var imgTime = 5000;
+  var currentSlide = 1;
+  
+  var $slideCont = $('.laborSlideContainer');
+  var $fullSlide = $slideCont.find('.laborFullSlide');
+  var $slides = $fullSlide.find('.laborSlides');
+  
+  var interval;
+  
+  function laborStartSlider() {
+    interval = setInterval(function() {
+      $fullSlide.animate({marginTop: '-=' + height}, animationSpeed, function() {
+      currentSlide++;
+        if (currentSlide === $slides.length) {
+          currentSlide = 1;
+          $fullSlide.css({marginTop: 0});
+        };
+      });
+    }, imgTime);
+  };
+    
+    laborStartSlider();
+  });
+  
     var num = 1;
     
     $('.termekek').on('click', function() { 
       
       if (num == 1) {
-        $('.menuWrapperTermekek').addClass('menuWrapperActive');
-        $('.termek').addClass('termekActive'); 
+        $('.termek').slideDown(300, function() {
+          $(this).addClass('termekActive'); 
+        })
         num++;
       } else {
               
-        $('.menuWrapperTermekek').removeClass('menuWrapperActive');
-        $('.termek').removeClass('termekActive'); 
+        $('.termek').slideUp(300, function() {
+          $(this).removeClass('termekActive'); 
+        })
         num--;
       }
     });

@@ -3,7 +3,7 @@
   src: url("neon.ttf");
 }
 
-.neonText {
+.laborText {
   color: white;
   font-family: Neon;
   text-align: left;
@@ -12,7 +12,7 @@
   margin: 0;
 }
 
-.neonTitle {
+.laborTitle {
   color: aquamarine;
   font-family: Neon;
     text-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 20px blue, 0 0 33px blue;
@@ -23,7 +23,7 @@
 }
 
 
-.containerNeon {
+.containerLabor {
   height: auto;
   width: 40%;
   position: relative;
@@ -65,33 +65,45 @@
   100%        {color: white; text-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 17px blue, 0 0 38px blue, 0 0 50px blue, 0 0 70px blue;}
 }
 
-.neonSlideContainer {
+.laborSlideContainer {
   width: calc(50% - 10rem);
-  height: 270px;
+  height: 400px;
   position: relative;
-  left: 15%;
-  top: 2rem;
+  left: 17%;
+  top: 0;
   overflow: hidden;
   display: inline-block;
   text-align: center;
 }
 
-.neonFullSlide {
+.laborFullSlide {
   width: 100%;
   height: 6000px;
 }
 
-.neonSlide, .neonSlides {
-  max-height: 270px;
+.laborSlide, .laborSlides {
+  max-height: 400px;
   max-width: 100%;
 }
 
-.neonSlides {
+.laborSlides {
   width: 100%;
-  height: 270px;
+  height: 400px;
 }
 
-.seacret {
-  width: 100%;
-  padding-top: calc(135px - 3.5rem);
+
+.li {
+  font-family: Neon;
+  font-size: 1rem;
+  color: aquamarine;
+  text-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 20px blue, 0 0 33px blue;
+  line-height: 1.5rem;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.ul {
+  margin: 1rem;
+  margin-left: 15%;
 }
