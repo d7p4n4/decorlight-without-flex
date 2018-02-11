@@ -85,6 +85,34 @@ window.onload = function() {
     laborStartSlider();
   });
   
+     $(function () {
+  
+  var height = 270;
+  var animationSpeed = 1500;
+  var imgTime = 5000;
+  var currentSlide = 1;
+  
+  var $slideCont = $('.diszSlideContainer');
+  var $fullSlide = $slideCont.find('.diszFullSlide');
+  var $slides = $fullSlide.find('.diszSlides');
+  
+  var interval;
+  
+  function diszStartSlider() {
+    interval = setInterval(function() {
+      $fullSlide.animate({marginTop: '-=' + height}, animationSpeed, function() {
+      currentSlide++;
+        if (currentSlide === $slides.length) {
+          currentSlide = 1;
+          $fullSlide.css({marginTop: 0});
+        };
+      });
+    }, imgTime);
+  };
+    
+    diszStartSlider();
+  });
+  
     var num = 1;
     
     $('.termekek').on('click', function() { 
